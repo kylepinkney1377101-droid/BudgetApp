@@ -58,7 +58,7 @@ base_payment = calculate_mortgage(principal, rate, years)
 st.write(f"### Standard Monthly Payment (P&I): **${base_payment:.2f}**")
 
 # Buy-ability analysis using 28% of take-home pay
-monthly_take_home = st.number_input("Take-Home Monthly Pay ($)", value=6000.00)
+monthly_take_home = st.number_input("Take-Home Monthly Pay ($)", value=5833.33)
 
 buyability = calculate_buyability(principal, rate, years, monthly_take_home)
 max_principal = calculate_max_affordable_principal(rate, years, monthly_take_home)
